@@ -2,7 +2,7 @@ import java.util.Scanner;
 class hello{
    public static void main(String args[]){
 
-      int score = 50;
+      int score = 95;
 
       if(score>=50 && score<60)
       {
