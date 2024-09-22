@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Length",
+            "request": "launch",
+            "mainClass": "Length",
+            "projectName": "My-Java_47b1e50a"
+        },
+        {
+            "type": "java",
             "name": "Static",
             "request": "launch",
             "mainClass": "Static",
