@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 class kumaran
 
@@ -28,7 +28,7 @@ class kumaran
         name = sc.nextLine();
         name = sc.nextLine();
         System.out.println("Name: "+name+"\n"+"Age: "+age+"\n"+"Gender: "+gender+"\n"+"Fees: "+fees);2525
-  }*/
+  }
   {
       int a=10;
       static int b= 20;      
@@ -42,4 +42,22 @@ class kumaran
         kumaran k=new kumaran();
        k.display();
       }
-  }
+  } */
+  public class Static {
+    int a = 10;
+    static int b = 20;
+    void display(){
+        a++;
+        b++;
+        System.out.println("a: "+a+"\n"+"b: "+b);
+    }
+    public static void main(String[] args) {
+        Static s = new Static();
+        Static s1 = new Static();
+        Static s2 = new Static();
+        s.display();
+        s1.display();
+        s2.display();
+    }
+    
+}
