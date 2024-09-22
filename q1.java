@@ -1,15 +1,30 @@
 import java.util.Scanner;
 
-class q1{
-    public static void main(String args[])
-    {
-        Scanner scan = new Scanner(System.in);
-        int a = scan.nextInt();
-        int b = scan.nextInt();
-        int c = scan.nextInt();
-        int d = a*b*c;
-        int e = a+b+c;
-
-        System.out.println(d/e);
+class Area {
+    // Method to calculate the area of a square
+    double square(int sideLength) {
+        return sideLength * sideLength;
     }
-} 
+
+    // Method to calculate the area of a circle
+    double circle(double radius) {
+        return 3.14 * radius * radius;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the length of the square:");
+        int sideLength = sc.nextInt();
+        Area areaCalculator = new Area();
+        double squareArea = areaCalculator.square(sideLength);
+        System.out.println("Area of the square: " + squareArea);
+
+        System.out.println("Enter the radius of the circle:");
+        double radius = sc.nextDouble();
+        double circleArea = areaCalculator.circle(radius);
+        System.out.println("Area of the circle: " + circleArea);
+        
+        sc.close(); // Close the scanner to avoid resource leak
+    }
+}
