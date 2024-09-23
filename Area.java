@@ -97,7 +97,7 @@ public class Area {
     public static void main(String[] args){
         display();
     }
-}*/
+}
 public class Area {
 
     public static void main(String[] args) {
@@ -113,4 +113,13 @@ public class Area {
         }
     }
 }
+public class Area {
+
+    public static void main(String[] args) throws ArithmeticException{
+    int a = 10/0;
+    throw new ArithmeticException("cant divide by zero");
+    }
+    
+}*/
+
  
