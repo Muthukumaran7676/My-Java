@@ -64,7 +64,7 @@ class Length
         }
      System.out.println(count);  
     }
-}*/
+}
 
 public class Area {
 
@@ -79,9 +79,22 @@ public class Area {
         }
         System.out.println(count);
         for(i=s.length()-1;i>=0;i--){
-            System.out.print(s.charAt(i));
+            System.out.println(s.charAt(i));
     }
+    }
+}*/
+public class Area {
+    static void display()
+    {
+        System.out.println("Hello all");
+        run();
+    }
+    static void run()
+    {
+        System.out.println(10/0);
+    }
+    public static void main(String[] args){
+        display();
     }
 }
-
  
