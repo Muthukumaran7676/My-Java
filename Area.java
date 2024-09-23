@@ -82,12 +82,13 @@ public class Area {
             System.out.println(s.charAt(i));
     }
     }
-}*/
+}
 public class Area {
     static void display()
     {
-        System.out.println("Hello all");
         run();
+        System.out.println("Hello all");
+        
     }
     static void run()
     {
@@ -95,6 +96,21 @@ public class Area {
     }
     public static void main(String[] args){
         display();
+    }
+}*/
+public class Area {
+
+    public static void main(String[] args) {
+        try{
+            System.out.println(10/0);
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+        finally
+        {
+            System.out.println("hello all!!");
+        }
     }
 }
  
